@@ -1,15 +1,15 @@
 # pytest-socket
 
-[![PyPI current version](https://img.shields.io/pypi/v/pytest-socket.svg)](https://pypi.python.org/pypi/pytest-socket)
-[![Python Support](https://img.shields.io/pypi/pyversions/pytest-socket.svg)](https://pypi.python.org/pypi/pytest-socket)
-[![Tests](https://github.com/miketheman/pytest-socket/workflows/Python%20Tests/badge.svg)](https://github.com/miketheman/pytest-socket/actions?query=workflow%3A%22Python+Tests%22)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/miketheman/pytest-socket/main.svg)](https://results.pre-commit.ci/latest/github/miketheman/pytest-socket/main)
-[![Maintainability](https://api.codeclimate.com/v1/badges/1608a75b1c3a20211992/maintainability)](https://codeclimate.com/github/miketheman/pytest-socket/maintainability)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmiketheman%2Fpytest-socket.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmiketheman%2Fpytest-socket?ref=badge_shield)
+[![PyPI current version](https://img.shields.io/pypi/v/pytest-subket.svg)](https://pypi.python.org/pypi/pytest-subket)
+[![Python Support](https://img.shields.io/pypi/pyversions/pytest-subket.svg)](https://pypi.python.org/pypi/pytest-subket)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 A plugin to use with Pytest to disable or restrict `socket` calls during
 tests to ensure network calls are prevented.
+
+> [!important]
+> This is a fork of [pytest-socket] by [@miketheman]. Unless you are the pip
+> project, you probably shouldn't use this.
 
 ---
 
@@ -24,11 +24,11 @@ tests to ensure network calls are prevented.
 
 ## Installation
 
-You can install `pytest-socket` via [pip](https://pypi.python.org/pypi/pip/)
+You can install `pytest-subket` via [pip](https://pypi.python.org/pypi/pip/)
 from [PyPI](https://pypi.python.org/pypi):
 
 ```console
-pip install pytest-socket
+pip install pytest-subket
 ```
 
 or add to your `pyproject.toml` for [uv](https://docs.astral.sh/uv/):
@@ -36,7 +36,7 @@ or add to your `pyproject.toml` for [uv](https://docs.astral.sh/uv/):
 ```toml
 [project.optional-dependencies]
 dev = [
-    "pytest-socket",
+    "pytest-subket",
 ]
 ```
 
@@ -130,29 +130,23 @@ coverage at least stays the same before you submit a pull request.
 ## License
 
 Distributed under the terms of the
-[MIT](http://opensource.org/licenses/MIT) license, "pytest-socket" is
+[MIT](http://opensource.org/licenses/MIT) license, "pytest-subket" is
 free and open source software
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmiketheman%2Fpytest-socket.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmiketheman%2Fpytest-socket?ref=badge_large)
 
 ## Issues
 
 If you encounter any problems, please [file an issue](https://github.com/miketheman/pytest-socket/issues)
 along with a detailed description.
 
-## References
+## Acknowledgements
 
-This [Pytest](https://github.com/pytest-dev/pytest) plugin was generated with
-[Cookiecutter](https://github.com/audreyr/cookiecutter) along with
-[\@hackebrot](https://github.com/hackebrot)\'s
-[Cookiecutter-pytest-plugin](https://github.com/pytest-dev/cookiecutter-pytest-plugin)
-template.
+This is a fork of [@miketheman]'s [pytest-socket] project. A fork was created to
+support the unique requirements of the pip project.
 
 This plugin came about due to the efforts by
 [\@hangtwenty](https://github.com/hangtwenty) solving a [StackOverflow
 question](https://stackoverflow.com/a/30064664), then converted into a
 pytest plugin by [\@miketheman](https://github.com/miketheman).
 
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=miketheman/pytest-socket)](https://star-history.com/#miketheman/pytest-socket&Date)
+[@miketheman]: https://github.com/miketheman
+[pytest-socket]: https://github.com/miketheman/pytest-socket
