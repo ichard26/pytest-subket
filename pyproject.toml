@@ -40,7 +40,7 @@ dev = [
 "Funding" = "https://github.com/sponsors/miketheman"
 
 [project.entry-points.pytest11]
-socket = 'pytest_socket'
+socket = 'pytest_socket._plugin'
 
 [tool.coverage.report]
 include = ["src/pytest_socket/*", "tests/*"]
