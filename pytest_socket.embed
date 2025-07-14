@@ -13,7 +13,7 @@ if config := os.getenv("_PYTEST_SOCKET_SUBPROCESS", None):
     state = None
     try:
         import socket
-        from pytest_socket import disable_socket, _create_guarded_connect
+        from pytest_socket._core import disable_socket, _create_guarded_connect
         state = json.loads(config)
 
         if state["mode"] == "disable":

@@ -12,8 +12,8 @@ from typing import List, Optional, Union
 
 import pytest
 
-from tests.conftest import unix_sockets_only
 from tests.common import assert_host_blocked, assert_socket_blocked
+from tests.conftest import unix_sockets_only
 
 
 def is_pytest_socket_editably_installed() -> bool:
