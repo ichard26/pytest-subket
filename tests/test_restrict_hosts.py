@@ -4,7 +4,7 @@ import socket
 
 import pytest
 
-from pytest_socket import normalize_allowed_hosts
+from pytest_socket._core import normalize_allowed_hosts
 from tests.common import assert_host_blocked
 
 localhost = "127.0.0.1"

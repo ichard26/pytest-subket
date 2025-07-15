@@ -27,7 +27,6 @@ dependencies = ["pytest>=7.0.0"]
 
 [project.optional-dependencies]
 dev = [
-    "coverage[toml] >= 7.9",
     "pytest-httpbin >= 2.1.0",
     "pytest-randomly >= 3.15.0",
     "requests >= 2.32.4",
@@ -41,7 +40,7 @@ dev = [
 "Change Log" = "https://github.com/ichard26/pytest-subket/blob/main/CHANGELOG.md"
 
 [project.entry-points.pytest11]
-socket = 'pytest_socket._plugin'
+subket = 'pytest_socket._plugin'
 
 [tool.coverage.report]
 include = ["src/pytest_socket/*", "tests/*"]

@@ -9,7 +9,8 @@ tests to ensure network calls are prevented.
 
 > [!important]
 > This is a fork of [pytest-socket] by [@miketheman]. Unless you are the pip
-> project, you probably shouldn't use this.
+> project, you probably shouldn't use this. This fork was created to include
+> subprocess support (that can even be injected into nested environments).
 
 ---
 
