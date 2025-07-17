@@ -1,8 +1,10 @@
 # pytest-socket change log
 
-This document records all notable changes to
-[pytest-socket](https://pypi.python.org/pypi/pytest-socket). This
-project attempts to adhere to [Semantic Versioning](http://semver.org/).
+## 0.8.1 (2025-07-17)
+
+- Declare support for Python 3.13
+- Remove explicit dependency on pytest. It is needed to use `pytest-subket` as a
+  pytest plugin, it's unnecessary when injected into a nested environment.
 
 ## [0.7.0][] (2024-01-28)
 

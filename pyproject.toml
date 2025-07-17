@@ -1,6 +1,6 @@
 [project]
 name = "pytest-subket"
-version = "0.8.0"
+version = "0.8.1"
 description = "Pytest Plugin to disable socket calls during tests"
 authors = [
     { name = "Mike Fiedler", email = "miketheman@gmail.com" },
@@ -24,7 +24,6 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 requires-python = ">= 3.9"
-dependencies = ["pytest>=7.0.0"]
 
 [project.optional-dependencies]
 dev = [
