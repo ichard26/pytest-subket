@@ -18,7 +18,10 @@ from tests.conftest import unix_sockets_only
 
 def is_pytest_socket_editably_installed() -> bool:
     pytest_socket_package = Distribution.from_name("pytest_subket")
-    direct_url = json.loads(pytest_socket_package.read_text("direct_url.json"))
+    direct_url_text = pytest_socket_package.read_text("direct_url.json")
+    if direct_url_text is None:
+        return False
+    direct_url = json.loads(direct_url_text)
     editable = direct_url.get("dir_info", {}).get("editable", False)
     if editable and "CI" in os.environ:
         raise RuntimeError("CI should be testing against a normal install")
