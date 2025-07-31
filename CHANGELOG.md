@@ -1,5 +1,12 @@
 # pytest-socket change log
 
+## 0.8.2 (2025-07-31)
+
+- Gracefully handle missing `direct_url.json` distribution metadata file in
+  test suite
+- Fix packaging so a wheel can be built from the source distribution (and not
+  solely directly from the source tree)
+
 ## 0.8.1 (2025-07-17)
 
 - Declare support for Python 3.13
